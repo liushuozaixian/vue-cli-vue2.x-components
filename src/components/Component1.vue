@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <div class="title">我是组件一</div>
     <div v-show="isShow" @click="handleClick">哈哈哈哈哈哈{{title1}}</div>
     <button-counter :title="title1" :content="content" @showOrHidde="handleShowOrHidde(handleClick())"></button-counter>
     <button-counter :title="title2" @showOrHidde="title1 += $event"></button-counter>
@@ -56,5 +57,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.title{
+  color: green;
+  font-weight: bold;
+}
 </style>

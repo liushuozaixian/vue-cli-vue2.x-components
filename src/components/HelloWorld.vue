@@ -4,6 +4,7 @@
       <li @click="handleCounter">点击加一</li>
       <li @click="handleComponent1">父子组件基本信息传递，父传子props，子传父用click加$emit('')</li>
       <li @click="handleComponent2">自定义组件中的input实现与外界数据双向绑定！</li>
+      <li @click="handleComponent3">插槽的简单案例</li>
     </ul>
   </div>
 </template>
@@ -24,6 +25,9 @@ export default {
     },
     handleComponent2 () {
       this.$router.push('/Component2')
+    },
+    handleComponent3 () {
+      this.$router.push('/Component3')
     }
   }
 }

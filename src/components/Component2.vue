@@ -1,6 +1,6 @@
 <template>
  <div>
-   我是组件二
+   <div class="title">我是组件二</div>
    <!--
     input框中v-model实现的原理！！！
     1. input中的value值绑定到data中的某个数据!
@@ -11,7 +11,12 @@
    <div>{{mes}}</div>
    <!--自定义组件中input的双向绑定-->
    {{mes2}}
+   <!--此处的$event就是指的是在自定义组件（元素）内部触发input自定义事件时所传递的参数的值-->
    <self-input :value="mes2" @input="mes2 = $event"></self-input>
+   <!--如果上述形式写的是这样的话就可以简写为v-model-->
+   <self-input v-model="mes2"></self-input>
+   <!--当给div这样的元素加上value属性时没有效果-->
+   <div :value="mes">?</div>
  </div>
 </template>
 
@@ -49,5 +54,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.title{
+  font-weight: bold;
+  color: green;
+}
 </style>
