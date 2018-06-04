@@ -6,6 +6,7 @@
       <li @click="handleComponent2">自定义组件中的input实现与外界数据双向绑定！</li>
       <li @click="handleComponent3">插槽的简单案例</li>
       <li @click="handleComponent4">动态组件的简单案例</li>
+      <li @click="handleComponent5">有些元素只能出现在特定元素内部，有些元素只能包含特定元素</li>
     </ul>
   </div>
 </template>
@@ -32,6 +33,9 @@ export default {
     },
     handleComponent4 () {
      this.$router.push('/Component4')
+    },
+    handleComponent5 () {
+      this.$router.push('/Component5')
     }
   }
 }
