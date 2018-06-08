@@ -8,6 +8,7 @@
       <li @click="handleComponent4">动态组件的简单案例</li>
       <li @click="handleComponent5">有些元素只能出现在特定元素内部，有些元素只能包含特定元素</li>
       <li @click="handleComponent6">组件的注册包含全局注册、局部注册和模块系统基础组件的自动化全局注册</li>
+      <li @click="handleComponent7">属性prop</li>
     </ul>
   </div>
 </template>
@@ -40,6 +41,9 @@ export default {
     },
     handleComponent6 () {
       this.$router.push('/Component6')
+    },
+    handleComponent7 () {
+      this.$router.push('/Component7')
     }
   }
 }
