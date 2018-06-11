@@ -10,6 +10,7 @@
       <li @click="handleComponent6">组件的注册包含全局注册、局部注册和模块系统基础组件的自动化全局注册</li>
       <li @click="handleComponent7">属性prop</li>
       <li @click="handleComponent8">自定义事件</li>
+      <li @click="handleAsyncComponent9">异步组件</li>
 
     </ul>
   </div>
@@ -49,6 +50,9 @@ export default {
     },
     handleComponent8 () {
       this.$router.push('/Component8')
+    },
+    handleAsyncComponent9 () {
+      this.$router.push('/AsyncComponent9')
     }
   }
 }
