@@ -13,6 +13,7 @@
       <li @click="handleAsyncComponent9">异步组件</li>
       <li @click="handleComponent10">处理边界情况</li>
       <li @click="handleComponent11">程序化的事件侦听器</li>
+      <li @click="handleComponent12">组件的循环引用</li>
 
     </ul>
   </div>
@@ -61,6 +62,9 @@ export default {
     },
     handleComponent11 () {
       this.$router.push('/Component11')
+    },
+    handleComponent12 () {
+      this.$router.push('/Component12')
     }
   }
 }

@@ -25,6 +25,7 @@ const AsyncComponent9 = () => ({
 });
 import Component10 from '@/components/Component10'
 import Component11 from '@/components/Component11'
+import Component12 from '@/components/Component12'
 
 Vue.use(Router)
 
@@ -93,6 +94,11 @@ export default new Router({
       path: '/Component11',
       name: 'Component11',
       component: Component11
+    },
+    {
+      path: '/Component12',
+      name: 'Component12',
+      component: Component12
     }
 
   ]
