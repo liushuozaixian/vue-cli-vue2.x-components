@@ -22,7 +22,8 @@ const AsyncComponent9 = () => ({
   // 如果提供了超时时间且组件加载也超时了，
   // 则使用加载失败时使用的组件。默认值是：`Infinity`
   timeout: 3000
-})
+});
+import Component10 from '@/components/Component10'
 
 Vue.use(Router)
 
@@ -82,6 +83,11 @@ export default new Router({
       path: '/AsyncComponent9',
       name: 'AsyncComponent9',
       component: AsyncComponent9
+    }, {
+      path: '/Component10',
+      name: 'Component10',
+      component: Component10
     }
+
   ]
 })

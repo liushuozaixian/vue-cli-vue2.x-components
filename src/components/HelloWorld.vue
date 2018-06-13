@@ -11,6 +11,7 @@
       <li @click="handleComponent7">属性prop</li>
       <li @click="handleComponent8">自定义事件</li>
       <li @click="handleAsyncComponent9">异步组件</li>
+      <li @click="handleComponent10">处理边界情况</li>
 
     </ul>
   </div>
@@ -53,6 +54,9 @@ export default {
     },
     handleAsyncComponent9 () {
       this.$router.push('/AsyncComponent9')
+    },
+    handleComponent10 () {
+      this.$router.push('/Component10')
     }
   }
 }
