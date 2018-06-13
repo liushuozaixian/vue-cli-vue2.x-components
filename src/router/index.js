@@ -24,6 +24,7 @@ const AsyncComponent9 = () => ({
   timeout: 3000
 });
 import Component10 from '@/components/Component10'
+import Component11 from '@/components/Component11'
 
 Vue.use(Router)
 
@@ -87,6 +88,11 @@ export default new Router({
       path: '/Component10',
       name: 'Component10',
       component: Component10
+    },
+    {
+      path: '/Component11',
+      name: 'Component11',
+      component: Component11
     }
 
   ]
